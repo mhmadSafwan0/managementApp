@@ -13,12 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //
-//Route::get('/', function () {
-//    return view('hhh');
-//});
-//Route::get('/hhh', function () {
-//    return view('hhh');
-//});
+
 
 Route::redirect('/','/home');
 

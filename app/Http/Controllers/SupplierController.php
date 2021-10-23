@@ -40,7 +40,7 @@ class SupplierController extends Controller
 
         \App\Models\Supplier::create($data);
 
-        return redirect (route('supplier.home'));
+        return redirect (route('suppliers'));
 
     }
 
@@ -69,14 +69,14 @@ class SupplierController extends Controller
 
         $supplier->update($data);
 
-        return redirect(route('supplier.home'));
+        return redirect(route('suppliers'));
 
     }
     public function destroy(\App\Models\Supplier $supplier )
     {
         $supplier->delete();
 
-        return redirect(route('supplier.home'));
+        return redirect(route('suppliers'));
     }
 
     public function search(Request $request )
